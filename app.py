@@ -6,9 +6,8 @@ from typing import Optional
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
-from ..models import GeoShieldAction, GeoObservation, GeoState
-from .environment import GeoShieldEnvironment
-
+from models import GeoShieldAction, GeoObservation, GeoState
+from environment import GeoShieldEnvironment
 app = FastAPI(title="GeoShield OpenEnv", version="1.0.0")
 
 # One global env instance per process (fine for hackathon single-agent use)
