@@ -119,20 +119,20 @@ Baseline run using `Qwen/Qwen2.5-72B-Instruct` via HF Inference Router:
 ---
 
 ## 🗂️ Project Structure
+
+```
 geoshield/
-├── app.py              # FastAPI server (endpoints: /reset, /step, /state, /health)
-├── environment.py      # Core OpenEnv environment logic
-├── models.py           # Pydantic models (Action, Observation, State, Reward)
-├── graders.py          # Deterministic task graders
-├── inference.py        # Baseline inference script (OpenAI client)
-├── openenv.yaml        # OpenEnv spec metadata
-├── Dockerfile          # Container definition
-├── task1_train.jsonl   # Task 1 training data
-├── task2_train.jsonl   # Task 2 training data
-└── task3_train.jsonl   # Task 3 training data
-
----
-
+├── app.py                # FastAPI server (/reset, /step, /state, /health)
+├── environment.py        # Core OpenEnv environment logic
+├── models.py             # Pydantic models (Action, Observation, State, Reward)
+├── graders.py            # Deterministic task graders
+├── inference.py          # Baseline inference script (OpenAI client)
+├── openenv.yaml          # OpenEnv spec metadata
+├── Dockerfile            # Container definition
+├── task1_train.jsonl     # Task 1 training data
+├── task2_train.jsonl     # Task 2 training data
+└── task3_train.jsonl     # Task 3 training data
+```
 ## ⚙️ Environment Variables
 
 | Variable | Default | Description |
