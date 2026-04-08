@@ -13,4 +13,4 @@ EXPOSE 7860
 ENV PORT=7860
 ENV PYTHONPATH=/app
 
-CMD ["uvicorn", "src.geoshield.server.app:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
