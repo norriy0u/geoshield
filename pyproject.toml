@@ -1,0 +1,10 @@
+[project]
+name = "geoshield"
+version = "1.0.0"
+description = "GeoShield SIGINT Triage Benchmark - OpenEnv Hackathon"
+requires-python = ">=3.11"
+
+[tool.openenv]
+name = "geoshield"
+version = "1.0.0"
+tasks = ["anomaly_detection", "threat_attribution", "response_recommendation"]
